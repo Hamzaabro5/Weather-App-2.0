@@ -35,10 +35,10 @@ function App() {
         <button onClick={getCity} type="submit">Search</button>
       </form>
 
-       <div className='flex justify-center gap-2 flex-wrap mt-3'>
+       <div>
                 {weather.length > 0 && (weather.map((item,index) => (
                     <div key={index}>
-                        <Card location={item.data.location} condition={item.data.current}/>
+                        <Card condition={item.data.current} location={item.data.location} current={item.data.current}/>
                     </div>
                 )))}
             </div>
