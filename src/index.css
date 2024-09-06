@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,body{
+    background-image: url(https://img.freepik.com/free-photo/thunderstorm-countryside_23-2151762533.jpg?t=st=1725628273~exp=1725631873~hmac=4eed855f607cdec55616fdf9c8cb24d1d86e6ec3eebd5101c5496d9c69c9d23b&w=1380);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({ location, current }) => {
     return (
         <>
-        <div className='card text-center border-2 mt-20 px-40 pb-10'>
+        <div className='card text-center border-2 mt-20 px-40 pb-10 text-white'>
 
             <img width={`200px`} src={current.condition.icon} viewBox="0 0 512 512"></img>
             <h1 className='text-6xl mt-2 font-bold'>{current.temp_c} <sup>o</sup>C</h1>
