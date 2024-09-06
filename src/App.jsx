@@ -29,13 +29,13 @@ function App() {
   return (
     <>
     <div>
-      <h1>Weather App</h1>
-      <form>
-        <input type="text" ref={inputVal}/>
-        <button onClick={getCity} type="submit">Search</button>
+      <h1 className='text-5xl font-bold text-center my-8'>Weather App</h1>
+      <form className='text-center'>
+        <input className="input input-bordered rounded-3xl input-sm w-full max-w-xs p-6 text-lg" type="text" placeholder='Enter City Name' ref={inputVal}/>
+        <button onClick={getCity} type="submit" className="btn btn-error rounded-3xl px-10 py-0 ms-5">Search</button>
       </form>
 
-       <div>
+       <div className='flex justify-center flex-wrap gap-32'>
                 {weather.length > 0 && (weather.map((item,index) => (
                     <div key={index}>
                         <Card condition={item.data.current} location={item.data.location} current={item.data.current}/>
